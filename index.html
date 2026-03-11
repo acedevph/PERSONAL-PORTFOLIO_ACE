@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Personal Website</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #fff3e0;
+        color: #333;
+        overflow-x: hidden;
+    }
+
+    nav {
+        width: 100%;
+        background: #ff8c00;
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 17px;
+        padding: 8px 12px;
+        border-radius: 6px;
+        transition: 0.2s;
+    }
+
+    nav a:hover {
+        background: #ffb04d;
+    }
+
+    .container {
+        margin-top: 30px;
+    }
+
+    section {
+        width: 90%;
+        max-width: 900px;
+        margin: 40px auto;
+        background: white;
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        margin-top: 0;
+        color: #ff8c00;
+    }
+
+    .profile {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .profile img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        background: #ddd;
+    }
+
+    .vertical-list {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 20px;
+    }
+
+    .person-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff7ec;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .person-card img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+        background: #ddd;
+    }
+
+    .person-card p {
+        margin-top: 10px;
+        font-size: 15px;
+        text-align: center;
+        color: #444;
+    }
+
+    .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .photo-grid img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        background: #ddd;
+        border-radius: 8px;
+    }
+
+    .contact a {
+        display: block;
+        margin: 5px 0;
+        color: #ff7a00;
+        text-decoration: none;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="#slide1">Profile</a>
+    <a href="#slide2">Details</a>
+    <a href="#slide3">Family</a>
+    <a href="#slide4">Friends</a>
+    <a href="#slide5">Hobbies</a>
+    <a href="#slide6">Contact</a>
+</nav>
+
+<div class="container">
+
+<section id="slide1">
+    <h2>Student Profile</h2>
+    <div class="profile">
+        <img src="me.jpg" alt="Profile Photo">
+        <div>
+            <p> <strong>Sean Jeremy S. Sulayao</strong></p>
+            <p> <strong>23 years old</strong> </p>
+            <p> <strong>2nd Year College </strong></p>
+            <p> <strong>Kolehiyo ng Lungsod ng Lipa</strong></p>
+            <p> <strong>Hi I'm Sean, call me "Ace". An Aspiring Web Developer.</strong></p>
+        </div>
+    </div>
+</section>
+
+<section id="slide2">
+    <h2>Detailed Information</h2>
+    <ul>
+        <li><strong>Birthday:</strong> December 25, 2001</li>
+        <li><strong>Birthplace:</strong> Daet, Camarines Norte</li>
+        <li><strong>Address:</strong> Lipa City, Batangas</li>
+    </ul>
+</section>
+
+<section id="slide3">
+    <h2>Family Members</h2>
+
+    <div class="vertical-list">
+        <div class="person-card">
+            <img src="family/mama.jpg" alt="Mother">
+            <p>Fe B. Serrano - this is my mother.</p>
+        </div>
+        <div class="person-card">
+            <img src="family/papa.jpg" alt="Father">
+            <p>Sunny M. Sulayao - this is my father.</p>
+        </div>
+        <div class="person-card">
+            <img src="family/jericho.jpeg" alt="Jericho">
+            <p>Jericho Sulayao - this is my brother.</p>
+        </div>
+        <div class="person-card">
+            <img src="family/jesiah.jpg" alt="Jesiah">
+            <p>Jesiah Sulayao - this is my sister.</p>
+        </div>
+        <div class="person-card">
+            <img src="family/jayre.jpeg" alt="Jayre">
+            <p>Jayre Sulayao - this is my sister.</p>
+        </div>
+        <div class="person-card">
+            <img src="family/julia.jpeg" alt="Julia">
+            <p>Julia Sulayao - this is my little sister.</p>
+        </div>
+    </div>
+</section>
+
+<section id="slide4">
+    <h2>Friends</h2>
+
+    <div class="vertical-list">
+        <div class="person-card">
+            <img src="friends/faye.jpeg" alt="Faye">
+            <p>Faye - this is my friend since 1st year</p>
+        </div>
+        <div class="person-card">
+            <img src="friends/vince.jpeg" alt="Vince">
+            <p>Vince - this is my friend since grade 12.</p>
+        </div>
+        <div class="person-card">
+            <img src="friends/tyron.jpeg" alt="Tyron">
+            <p>Tyron - he's my friend.</p>
+        </div>
+        <div class="person-card">
+            <img src="friends/ron.jpeg" alt="Ron">
+            <p>Ron - he's my friend</p>
+        </div>
+        <div class="person-card">
+            <img src="friends/joshua.jpeg" alt="Joshua">
+            <p>Joshua - he's my friend.</p>
+        </div>
+    </div>
+</section>
+
+<section id="slide5">
+    <h2>Hobbies and Extra Activities</h2>
+    <ul>
+        <li>Hobby 1 – Coding</li>
+        <li>Hobby 2 – Writing Stories</li>
+    </ul>
+    <div class="photo-grid">
+        <img src="coding.jpeg" alt="Coding">
+        <img src="stories.jpeg" alt="Writing Stories">
+    </div>
+</section>
+
+<section id="slide6">
+    <h2>Contact Details</h2>
+    <div class="contact">
+        <a href="mailto:sulayaosean@gmail.com">sulayaosean@gmail.com</a>
+        <a href="tel:+639274424266">+63 927 442 4266</a>
+        <a href="https://www.facebook.com/Sir.Ays25" target="_blank">facebook.com/Sir.Ays25</a>
+    </div>
+</section>
+
+</div>
+</body>
+</html>
